@@ -1,7 +1,7 @@
 ## git-tips
 > [git tips](https://github.com/git-tips/tips)의 한국어 버전 문서입니다.
 
-[English](http://git.io/git-tips) | [中文](https://github.com/521xueweihan/git-tips) | [Русский](https://github.com/Imangazaliev/git-tips)
+[English](http://git.io/git-tips) | [中文](https://github.com/521xueweihan/git-tips) | [Русский](https://github.com/Imangazaliev/git-tips) | [Tiếng Việt](https://github.com/hprobotic/git-tips)
 
 <br>
 
