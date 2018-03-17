@@ -1,17 +1,15 @@
-## git-tips
+## Git Tips
 > [git tips](https://github.com/git-tips/tips)의 한국어 버전 문서입니다.
 
 [English](http://git.io/git-tips) | [中文](https://github.com/521xueweihan/git-tips) | [Русский](https://github.com/Imangazaliev/git-tips) | [Tiếng Việt](https://github.com/hprobotic/git-tips)
 
-<br>
-
-### 팁 툴:
+## 팁 툴
 
 * [git-tip](https://www.npmjs.com/package/git-tip) - 아래에 나열된 팁들을 사용할 수 있는 CLI 툴 ([도커 컨테이너](https://github.com/djoudi5/docker-git-tip))
 
-<br>
+## 목차
 
-참고로 모든 명령어는 다음 버전에서 테스트 되었습니다: `git version 2.7.4 (Apple Git-66)`.
+> 참고로 모든 명령어는 다음 버전에서 테스트 되었습니다: `git version 2.7.4 (Apple Git-66)`.
 
 * [20개 내외의 명령어로 Git 사용하기](#20개-내외의-명령어로-git-사용하기)
 * [Git과 함께 제공되는 유용한 가이드라인 보기](#git과-함께-제공되는-유용한-가이드라인-보기)
