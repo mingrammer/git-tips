@@ -1,7 +1,7 @@
 # Git Tips
 > [git tips](https://github.com/git-tips/tips)의 한국어 버전 문서입니다.
 
-[English](http://git.io/git-tips) | [中文](https://github.com/521xueweihan/git-tips) | [Русский](https://github.com/Imangazaliev/git-tips) | [Tiếng Việt](https://github.com/hprobotic/git-tips)
+[English](http://git.io/git-tips) | [中文](https://github.com/521xueweihan/git-tips) | [Русский](https://github.com/Imangazaliev/git-tips) | [Tiếng Việt](https://github.com/hprobotic/git-tips) | [日本語](https://github.com/isotai/git-tips) | [नेपाली](https://github.com/amarduwal/git-tips) | [Polski](https://github.com/mbiesiad/tips)
 
 ## 팁 툴
 
@@ -164,6 +164,12 @@
 * [모든 git 명령어 별칭 나열하기](#모든-git-명령어-별칭-나열하기)
 * [git 상태 간략하게 보기](#git-상태-간략하게-보기)
 * [하루 전의 커밋으로 체크아웃하기](#하루-전의-커밋으로-체크아웃하기)
+* [새로운 로컬 브랜치를 원격 저장소에 푸시하고 트래킹하기](#새로운-로컬-브랜치를-원격-저장소에-푸시하고-트래킹하기)
+* [브랜치 베이스 변경하기](#브랜치-베이스-변경하기)
+* [원격 저장소에 HTTPs 대신 SSH 사용하기](#원격-저장소에-HTTPs-대신-SSH-사용하기)
+* [최신 커밋에 서브모듈 업데이트하기](#최신-커밋에-서브모듈-업데이트하기)
+* [LF에서 CRLF로의 자동 변환 막기](#LF에서-CRLF로의-자동-변환-막기)
+
 
 ## 20개 내외의 명령어로 Git 사용하기
 ```sh
@@ -1148,4 +1154,33 @@ git status --short --branch
 ## 하루 전의 커밋으로 체크아웃하기
 ```sh
 git checkout master@{yesterday}
+```
+
+## 새로운 로컬 브랜치를 원격 저장소에 푸시하고 트래킹하기
+```sh
+git push -u origin <branch_name>
+```
+
+## 브랜치 베이스 변경하기
+```sh
+git rebase --onto <new_base> <old_base>
+```
+
+## 원격 저장소에 HTTPs 대신 SSH 사용하기
+```sh
+git config --global url.'git@github.com:'.insteadOf 'https://github.com/'
+```
+
+## 최신 커밋에 서브모듈 업데이트하기
+```sh
+cd <path-to-submodule>
+git pull origin <branch>
+cd <root-of-your-main-project>
+git add <path-to-submodule>
+git commit -m "submodule updated"
+```
+
+## LF에서 CRLF로의 자동 변환 막기
+```sh
+git config --global core.autocrlf false
 ```
